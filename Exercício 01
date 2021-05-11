@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    char nome [10];
+    float vet [2];
+    float soma, media;
+
+
+    printf("Insira seu nome: \n");
+    scanf("%s", nome);
+
+    for(i=0; i<2; i++){
+        printf("Insira suas notas: ");
+        scanf("%f", &vet[i]);
+        }
+
+    soma = vet[0] + vet[1];
+    media = soma/2;
+
+    printf("A media do aluno %s é: ", nome);
+    printf("Media %f: ", media);
+    printf("%.2f e %.2f", vet[0], vet[1]);
+    return 0;
+}
